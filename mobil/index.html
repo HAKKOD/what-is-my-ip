@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WHAT IS MY IP</title>
+    <link rel="icon" href="/ikon.svg" sizes="any" type="image/svg+xml">
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <script>
+        document.write(`<script src="/belgeler/js/cihaz-kontrolu.js?x=${new Date().getTime()}"><\/script>`);
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="lead bg-dark">
+    <div class="table-responsive mb-5">
+        <table class="table table-bordered table-dark table-striped">
+            <tr class="text-center table-success">
+                <th colspan="3" class="p-5">CloudFlare Analysis</th>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">IP</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-ip" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    An Internet Protocol address (IP address) is a numerical label such as 192.0.2.1 that is connected
+                    to a computer network that uses the Internet Protocol for communication.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/IP_address"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/IP_address</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">ASN</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-asn" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    An autonomous system (AS) is a collection of connected Internet Protocol (IP) routing prefixes under
+                    the control of one or more network operators on behalf of a single administrative entity or domain,
+                    that presents a common and clearly defined routing policy to the Internet.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" target="_blank"
+                            class="text-white">https://en.wikipedia.org/wiki/Autonomous_system_(Internet)</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">ISP</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-isp" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    An Internet service provider (ISP) is an organization that provides services for accessing, using,
+                    or participating in the Internet.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://en.wikipedia.org/wiki/Internet_service_provider" target="_blank"
+                            class="text-white">https://en.wikipedia.org/wiki/Internet_service_provider</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">Country</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-country" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    A country is a distinct part of the world, such as a state, nation, or other political entity. It
+                    may be a sovereign state or make up one part of a larger state.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Country"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Country</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">City</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-city" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    A city is a large human settlement. It can be defined as a permanent and densely settled place with
+                    administratively defined boundaries whose members work primarily on non-agricultural tasks.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/City"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/City</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">Region</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-region" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    In geography, regions, otherwise referred to as zones, lands or territories, are areas that are
+                    broadly divided by physical characteristics (physical geography), human impact characteristics
+                    (human geography), and the interaction of humanity and the environment (environmental geography).
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Region"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Region</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">Longitude</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-longitude" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Longitude is a geographic coordinate that specifies the east–west position of a point on the surface
+                    of the Earth, or another celestial body.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Longitude"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Longitude</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">Latitude</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-latitude" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    In geography, latitude is a coordinate that specifies the north–south position of a point on the
+                    surface of the Earth or another celestial body.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Latitude"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Latitude</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">Postal Code</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-postal-code" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    A postal code (also known locally in various English-speaking countries throughout the world as a
+                    postcode, post code, PIN or ZIP Code) is a series of letters or digits or both, sometimes including
+                    spaces or punctuation, included in a postal address for the purpose of sorting mail.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Postal_code"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Postal_code</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">Timezone</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-timezone" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    A time zone is an area which observes a uniform standard time for legal, commercial and social
+                    purposes.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Time_zone"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Time_zone</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-success">
+                <td class="p-3">User Agent</td>
+                <td class="p-3">:</td>
+                <td id="cloudflare-user-agent" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    In computing, a user agent is any software, acting on behalf of a user, which "retrieves, renders
+                    and facilitates end-user interaction with Web content". A user agent is therefore a special kind
+                    of software agent.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/User_agent"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/User_agent</a>
+                    </span>
+                </td>
+            </tr>
+            <tr hidden></tr>
+            <tr class="text-center table-primary">
+                <th colspan="3" class="p-5">IP API Analysis</th>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Query</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-query" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    IP used for the query
+                    <br>
+                    Example: 173.194.67.94
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">As</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-as" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    AS number and organization, separated by space (RIR). Empty for IP blocks not being announced in BGP
+                    tables.
+                    <br>
+                    Example: AS15169 Google Inc.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Asname</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-asname" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    AS name (RIR). Empty for IP blocks not being announced in BGP tables.
+                    <br>
+                    Example: GOOGLE
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">City</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-city" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    City
+                    <br>
+                    Example: Mountain View
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Continent</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-continent" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Continent name
+                    <br>
+                    Example: North America
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Continent Code</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-continent-code" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Two-letter continent code
+                    <br>
+                    Example: NA
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Country</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-country" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Country name
+                    <br>
+                    Example: United States
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Country Code</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-country-code" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Two-letter country code ISO 3166-1 alpha-2
+                    <br>
+                    Example: US
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Currency</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-currency" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    National currency
+                    <br>
+                    Example: USD
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">District</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-district" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    District (subdivision of city)
+                    <br>
+                    Example: Old Farm District
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Hosting</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-hosting" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Hosting, colocated or data center
+                    <br>
+                    Example: true
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">ISP</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-isp" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    ISP name
+                    <br>
+                    Example: Google
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Lat</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-lat" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Latitude
+                    <br>
+                    Example: 37.4192
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Lon</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-lon" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Longitude
+                    <br>
+                    Example: -122.0574
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Mobile</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-mobile" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Mobile (cellular) connection
+                    <br>
+                    Example: true
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Offset</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-offset" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Timezone UTC DST offset in seconds
+                    <br>
+                    Example: -25200
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Org</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-org" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Organization name
+                    <br>
+                    Example: Google
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Proxy</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-proxy" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Proxy, VPN or Tor exit address
+                    <br>
+                    Example: true
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Region</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-region" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Region/state short code (FIPS or ISO)
+                    <br>
+                    Example: CA or 10
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Region Name</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-region-name" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Region/state
+                    <br>
+                    Example: California
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Reverse</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-reverse" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Reverse DNS of the IP (can delay response)
+                    <br>
+                    Example: wi-in-f94.1e100.net
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Status</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-status" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    success or fail
+                    <br>
+                    Example: success
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Timezone</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-timezone" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Timezone (tz)
+                    <br>
+                    Example: America/Los_Angeles
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-primary">
+                <td class="p-3">Zip</td>
+                <td class="p-3">:</td>
+                <td id="ip-api-zip" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Zip code
+                    <br>
+                    Example: 94043
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://ip-api.com/docs/api:json"
+                            target="_blank" class="text-white">https://ip-api.com/docs/api:json</a>
+                    </span>
+                </td>
+            </tr>
+            <tr hidden></tr>
+            <tr class="text-center table-warning">
+                <th colspan="3" class="p-5">JavaScript Analysis</th>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">App Name</td>
+                <td class="p-3">:</td>
+                <td id="javascript-app-name" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The value of the Navigator.appName property is always "Netscape", in any browser. This property is
+                    kept only for compatibility purposes.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/appName" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/appName</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">App Code Name</td>
+                <td class="p-3">:</td>
+                <td id="javascript-app-code-name" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The value of the Navigator.appCodeName property is always "Mozilla", in any browser. This property
+                    is kept only for compatibility purposes.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/appCodeName"
+                            target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/appCodeName</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">User Agent</td>
+                <td class="p-3">:</td>
+                <td id="javascript-user-agent" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The User-Agent request header is a characteristic string that lets servers and network peers
+                    identify the application, operating system, vendor, and/or version of the requesting user agent.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">App Version</td>
+                <td class="p-3">:</td>
+                <td id="javascript-app-version" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Returns either "4.0" or a string representing version information about the browser.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/appVersion" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/appVersion</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Operating System</td>
+                <td class="p-3">:</td>
+                <td id="javascript-operating-system" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    An operating system (OS) is system software that manages computer hardware, software resources, and
+                    provides common services for computer programs.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://en.wikipedia.org/wiki/Operating_system" target="_blank"
+                            class="text-white">https://en.wikipedia.org/wiki/Operating_system</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Screen Colours</td>
+                <td class="p-3">:</td>
+                <td id="javascript-screen-colours" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Color depth or colour depth also known as bit depth, is either the number of bits used to indicate
+                    the color of a single pixel, or the number of bits used for each color component of a single pixel.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Color_depth"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Color_depth</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Screen Resolution (Available)</td>
+                <td class="p-3">:</td>
+                <td id="javascript-screen-resolution-available" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The display resolution or display modes of a digital television, computer monitor or display device
+                    is the number of distinct pixels in each dimension that can be displayed.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://en.wikipedia.org/wiki/Display_resolution" target="_blank"
+                            class="text-white">https://en.wikipedia.org/wiki/Display_resolution</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Screen Resolution (Used)</td>
+                <td class="p-3">:</td>
+                <td id="javascript-screen-resolution-used" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The display resolution or display modes of a digital television, computer monitor or display device
+                    is the number of distinct pixels in each dimension that can be displayed.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://en.wikipedia.org/wiki/Display_resolution" target="_blank"
+                            class="text-white">https://en.wikipedia.org/wiki/Display_resolution</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Cookie Support</td>
+                <td class="p-3">:</td>
+                <td id="javascript-cookie-support" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to a user's
+                    web browser. The browser may store the cookie and send it back to the same server with later
+                    requests.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Encoding</td>
+                <td class="p-3">:</td>
+                <td id="javascript-encoding" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    An encoding defines a mapping between bytes and text. A sequence of bytes allows for different
+                    textual interpretations.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Glossary/character_encoding" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Glossary/character_encoding</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Browser Window Size (Available)</td>
+                <td class="p-3">:</td>
+                <td id="javascript-browser-window-size-available" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    On 2D displays, such as computer monitors and TVs, the display size (or viewable image size or VIS)
+                    is the physical size of the area where pictures and videos are displayed
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Display_size"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Display_size</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Browser Window Size (Used)</td>
+                <td class="p-3">:</td>
+                <td id="javascript-browser-window-size-used" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    On 2D displays, such as computer monitors and TVs, the display size (or viewable image size or VIS)
+                    is the physical size of the area where pictures and videos are displayed
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a href="https://en.wikipedia.org/wiki/Display_size"
+                            target="_blank" class="text-white">https://en.wikipedia.org/wiki/Display_size</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Product</td>
+                <td class="p-3">:</td>
+                <td id="javascript-product" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The value of the Navigator.product property is always "Gecko", in any browser. This property is kept
+                    only for compatibility purposes.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/product" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/product</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">OS CPU</td>
+                <td class="p-3">:</td>
+                <td id="javascript-os-cpu" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    A string providing a string which identifies the operating system on which the browser is running.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/oscpu" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/oscpu</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Product Sub</td>
+                <td class="p-3">:</td>
+                <td id="javascript-product-sub" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The Navigator.productSub read-only property returns the build number of the current browser.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/productSub" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/productSub</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Build ID</td>
+                <td class="p-3">:</td>
+                <td id="javascript-build-id" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    Returns the build identifier of the browser. In modern browsers this property now returns a fixed
+                    timestamp as a privacy measure, e.g. 20181001000000 in Firefox 64 onwards.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/buildID" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/buildID</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Hardware Concurrency</td>
+                <td class="p-3">:</td>
+                <td id="javascript-hardware-concurrency" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The navigator.hardwareConcurrency read-only property returns the number of logical processors
+                    available to run threads on the user's computer.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/hardwareConcurrency"
+                            target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/hardwareConcurrency</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Language</td>
+                <td class="p-3">:</td>
+                <td id="javascript-language" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The Navigator.language read-only property returns a string representing the preferred language of
+                    the user, usually the language of the browser UI.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language</a>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center fw-bold table-warning">
+                <td class="p-3">Languages</td>
+                <td class="p-3">:</td>
+                <td id="javascript-languages" class="p-3 text-break"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-5 text-break">
+                    The Navigator.languages read-only property returns an array of strings representing the user's
+                    preferred languages.
+                    <br>
+                    <span class="fst-italic">
+                        Source&nbsp;and&nbsp;Details&nbsp;:&nbsp;<a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages" target="_blank"
+                            class="text-white">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages</a>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        document.write(`<script src="/belgeler/js/analizler.js?x=${new Date().getTime()}"><\/script>`);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
